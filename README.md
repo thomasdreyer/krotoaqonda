@@ -2,6 +2,13 @@
 
 This document describes an end-to-end architecture for converting technical writing into interactive visualizations with HTML/CSS/JS, including animation and export capabilities.
 
+## Open Source & Community
+
+This project is open source and we welcome contributions from the community. Whether you're fixing typos, improving the prototype, or proposing new features, your help is appreciated.
+
+- **License:** See [LICENSE](LICENSE).
+- **How to contribute:** See [CONTRIBUTING.md](CONTRIBUTING.md).
+
 ## Prototype (Local Preview)
 
 This repo now includes a lightweight prototype to render flowchart JSON.
