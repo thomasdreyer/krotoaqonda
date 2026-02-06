@@ -2,6 +2,17 @@
 
 This document describes an end-to-end architecture for converting technical writing into interactive visualizations with HTML/CSS/JS, including animation and export capabilities.
 
+## Prototype (Local Preview)
+
+This repo now includes a lightweight prototype to render flowchart JSON.
+
+1. Start a local server:
+   ```bash
+   python -m http.server 8000
+   ```
+2. Open `http://localhost:8000` in your browser.
+3. Edit the JSON in the left panel and click **Render Diagram**.
+
 ## 1. End-to-End Architecture (Layered)
 
 ```

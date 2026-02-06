@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Technical Writing → Visualization</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Technical Writing → Visualization</h1>
+      <p>Paste JSON output from the NLP layer to render a flowchart preview.</p>
+    </header>
+
+    <main>
+      <section class="input-panel">
+        <label for="json-input">Structured JSON</label>
+        <textarea id="json-input" rows="16"></textarea>
+        <div class="controls">
+          <button id="render-btn">Render Diagram</button>
+          <span id="status" role="status" aria-live="polite"></span>
+        </div>
+      </section>
+
+      <section class="preview-panel">
+        <div class="preview-header">
+          <h2>Preview</h2>
+          <div class="export-buttons">
+            <button type="button" disabled>Export PNG</button>
+            <button type="button" disabled>Export SVG</button>
+            <button type="button" disabled>Export PDF</button>
+          </div>
+        </div>
+        <div id="diagram" aria-label="Diagram preview" role="img">
+          <svg id="edges" aria-hidden="true"></svg>
+          <div id="nodes"></div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <p>Prototype renderer for flowcharts. Edit nodes by changing the JSON.</p>
+    </footer>
+
+    <script src="app.js"></script>
+  </body>
+</html>
